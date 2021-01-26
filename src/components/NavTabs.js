@@ -6,45 +6,29 @@ function NavTabs() {
   const location = useLocation();
 
 	return (
-		
-    <nav class="navbar navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#"></a>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-
-      <li class="nav-item active">
-		<Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-		HOME   <span className="sr-only">(current)</span> </Link>
-	
-      </li>
-
-  
+      <Link to="/" className={location.pathname === "/" ? "nav-item nav-link active"  : "nav-link"}>
+	HOME  <span class="sr-only">(current)</span></Link>
 
 
+  <Link to="/contact" className={location.pathname === "/contact" ? "nav-item nav-link active"  : "nav-link"}>
+	CONTACT </Link>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
-      </li>
+  <Link to="/about" className={location.pathname === "/about" ? "nav-item nav-link active"  : "nav-link"}>
+	ABOUT </Link>
 
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a>
-      </li>
-
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">PORTIFOLIO</a>
-      </li>
-
-
-
-    </ul>
-
+  <Link to="/portifolio" className={location.pathname === "/portifolio" ? "nav-item nav-link active"  : "nav-link"}>
+	PORTIFOLIO </Link>
+      
+  </div>
   </div>
 </nav>
 	);

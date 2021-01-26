@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from "./theme"
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const rootElement = document.getElementById("root");
 

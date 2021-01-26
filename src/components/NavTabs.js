@@ -7,16 +7,16 @@ function NavTabs() {
 
 	return (
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a className="navbar-brand" href="#"></a>
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div className="navbar-nav">
 
       <Link to="/" className={location.pathname === "/" ? "nav-item nav-link active"  : "nav-link"}>
-	HOME  <span class="sr-only">(current)</span></Link>
+	HOME  <span className="sr-only">(current)</span></Link>
 
 
   <Link to="/contact" className={location.pathname === "/contact" ? "nav-item nav-link active"  : "nav-link"}>

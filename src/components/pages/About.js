@@ -6,8 +6,8 @@ function About() {
       <div className="jumbotron jumbotron-fluid ">
             <section>
                 <h1 className="display-4">ABOUT ME </h1>
-                <p className="lead"> <i><b>I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I
-                            DO.</b></i>
+                <p className="lead"> <i>I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I
+                            DO.</i>
                 </p>
             </section>
         </div>

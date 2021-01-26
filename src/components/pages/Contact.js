@@ -1,54 +1,48 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
+import TextField from "@material-ui/core/TextField";
+import { makeStyles } from "@material-ui/core/styles";
 
-function Contact(props) {
-  return (
-  
-            <div className="jumbotron jumbotron-fluid ">
-            <h1 className="display-4">CONTACT ME </h1>
-            <p className="lead"> <i> <b>LEAVE YOUR MESSAGE AND I WILL GET BACK TO YOU AS SOON AS
-                        POSSIBLE.</b></i>
-            </p>
-            </div> 
-      
-  
- /* <div id="box">
-            <div class="row">
-                <div class="col s12 l12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">First Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Last Name</label>
-                        </div>
-                    </div>
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="icon_telephone" type="tel" class="validate">
-                        <label for="icon_telephone">Telephone</label>
-                    </div>
-                    <br>
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Your Email: </label>
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-                        <input type="submit" value="Submit">
-                    </div>
-                </div>
-      
-      </div>
-        </div> */
+const useStyles = makeStyles((theme) => ({
+	root: {
+		"& .MuiTextField-root": {
+			margin: theme.spacing(1),
+			width: "25ch",
+		},
+	},
+}));
 
+export default function FormPropsTextFields() {
+	const classes = useStyles();
 
-        
-  );
+	return (
+		<form className={classes.root} noValidate autoComplete="off">
+			<div>
+				<TextField
+					defaultValue="First Name"
+					id="outlined-required"
+					label="Required"
+					variant="outlined"
+				/>
+				<TextField
+					defaultValue="Last Name"
+					id="outlined-required"
+					label="Required"
+					variant="outlined"
+					placeholder="Last Name"
+				/>
+			</div>
+
+			<div>
+				<TextField
+					id="outlined-textarea outlined-required"
+					label="Your Message"
+					multiline
+					rows={6}
+					placeholder="Placeholder"
+					multiline
+					variant="outlined"
+				/>
+			</div>
+		</form>
+	);
 }
-
-export default Contact;

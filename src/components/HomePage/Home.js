@@ -1,38 +1,65 @@
 import React from "react";
 import Logo from "./alex.png";
 import { Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import { Grid, Paper } from "@material-ui/core";
+
+import StarIcon from "@material-ui/icons/Star";
+import "../HomePage/HomePage.css";
+import Typical from "react-typical";
+
+const userStyles = makeStyles((theme) => ({}));
 
 function Home() {
-	return (
-		<div>
-			<div class="row">
-				<div class="col s12 m5 l6">
-					<img
-						src={Logo}
-						class="
-                        img-fluid max-width: 50%;"
-						alt="Alex Fernandes picture"
-					/>
-				</div>
-				<div class="col m5 m l5">
-					<p class="hithere">HI THERE !</p>
-					<h1 class="h1 typewriter-line">I am a Web Developer</h1>
-					<p class="hithere">
-						I'm a Web Developer student based in New Jersey, United States. I
-						strive to build immersive and beautiful web applications through
-						carefully crafted code and user-centric design.
-					</p>
+	const classes = userStyles();
 
-					<div className="App">
-						<Button variant="contained" color="secondary" href="./about">
-							MORE ABOUT ME
-						</Button>
+	return (
+		<Grid container spacing={2} className={classes.grid}>
+			<Grid item xs={12} md={6}>
+				<Paper className={classes.paper}>
+					<img src={Logo} className="imageAlex" alt="Alex" />
+				</Paper>
+			</Grid>
+
+			<Grid item xs={12} md={6}>
+				<Paper className={classes.paper}>
+					<div>
+						<div className="row">
+							<div className="col m5 m l5">
+								<p className="hithere">HI THERE !</p>
+								<h1 className="h1 typewriter-line">
+									<Typical
+										steps={["I am Alex Fernandes", 1500, "I am a Web Developer!", 2300]}
+										loop={Infinity}
+										wrapper="p"
+									/>
+								</h1>
+								<p className="Example">
+									I'm a Web Developer student based in New Jersey, United
+									States. I strive to build immersive and beautiful web
+									applications through carefully crafted code and user-centric
+									design.
+								</p>
+
+								<div className="App">
+									<Button
+										startIcon={<StarIcon />}
+										size="large"
+										style={{ fontSize: 12, padding: 18 }}
+										variant="contained"
+										color="secondary"
+										href="./about"
+									>
+										MORE ABOUT ME
+									</Button>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				</Paper>
+			</Grid>
+		</Grid>
 	);
 }
-
 
 export default Home;

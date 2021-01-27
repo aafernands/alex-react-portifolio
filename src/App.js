@@ -8,7 +8,7 @@ import About from "./components/AboutPage/About";
 import Contact from "./components/ContactPage/Contact";
 import Portifolio from "./components/PortifolioPage/Portifolio";
 
-function App() {
+function App() { 
 	return (
 		<Router>
 			<div>

@@ -4,6 +4,7 @@ import App from "./App";
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from "./theme"
 
+
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(

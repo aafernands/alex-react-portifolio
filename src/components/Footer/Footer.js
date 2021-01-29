@@ -16,7 +16,7 @@ function Footer() {
             <a href="https://www.linkedin.com/in/alex-fernandes-5850b535/" className="fa fa-linkedin"></a>
             <a href="https://www.instagram.com/aafernands/" className="fa fa-instagram"></a>
             <a href="https://github.com/aafernands/" className="fa fa-github"></a>
-            <p><span className="credits-footer">© 2020 Website Designed by <a
+            <p><span className="credits-footer">© 2021 Website Designed by <a
                         href="https://twitter.com/alexafernands">AlexFernandes</a></span></p>
         </footer>  
 

@@ -7,6 +7,8 @@ import { Grid, Paper } from "@material-ui/core";
 import StarIcon from "@material-ui/icons/Star";
 import "../HomePage/HomePage.css";
 import Typical from "react-typical";
+import Particles from "react-particles-js";
+
 const userStyles = makeStyles((theme) => ({}));
 
 function Home() {
@@ -14,12 +16,22 @@ function Home() {
 
 	return (
 		<Grid container spacing={2} className={classes.grid}>
-			<Grid item xs={12} md={6}>
+			<div>
+				{/* <Grid item xs={12} md={6}>
 				<Paper className={classes.paper}>
 					<img src={Logo} className="imageAlex" alt="Alex" />
 				</Paper>
-			</Grid>
-
+			</Grid> */}
+				<Particles
+					params={{
+						particles: {
+							number: {
+								value: 30,
+							},
+						},
+					}}
+				/>
+			</div>
 			<Grid item xs={12} md={6}>
 				<Paper className={classes.paper}>
 					<div>
@@ -43,7 +55,6 @@ function Home() {
 									States. I strive to build immersive and beautiful web
 									applications through carefully crafted code and user-centric
 									design.
-									
 								</p>
 								<div className="App">
 									<Button
@@ -56,8 +67,6 @@ function Home() {
 									>
 										MORE ABOUT ME
 									</Button>
-							
-
 								</div>
 							</div>
 						</div>

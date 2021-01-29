@@ -7,7 +7,6 @@ import { Grid, Paper } from "@material-ui/core";
 import StarIcon from "@material-ui/icons/Star";
 import "../HomePage/HomePage.css";
 import Typical from "react-typical";
-
 const userStyles = makeStyles((theme) => ({}));
 
 function Home() {
@@ -26,21 +25,26 @@ function Home() {
 					<div>
 						<div className="row">
 							<div className="col m5 m l5">
-								<p className="hithere">HI THERE !</p>
+								<p className="intro">HI THERE !</p>
 								<h1 className="h1 typewriter-line">
 									<Typical
-										steps={["I am Alex Fernandes", 1500, "I am a Web Developer!", 2300]}
+										steps={[
+											"I am alex fernandes",
+											1500,
+											"I am a web developer!",
+											2300,
+										]}
 										loop={Infinity}
 										wrapper="p"
 									/>
 								</h1>
-								<p className="Example">
+								<p className="intro">
 									I'm a Web Developer student based in New Jersey, United
 									States. I strive to build immersive and beautiful web
 									applications through carefully crafted code and user-centric
 									design.
+									
 								</p>
-
 								<div className="App">
 									<Button
 										startIcon={<StarIcon />}
@@ -52,6 +56,8 @@ function Home() {
 									>
 										MORE ABOUT ME
 									</Button>
+							
+
 								</div>
 							</div>
 						</div>
@@ -59,6 +65,11 @@ function Home() {
 				</Paper>
 			</Grid>
 		</Grid>
+
+		// <div class="MuiToolbar-root MuiToolbar-regular jss4">
+
+		// 	<h1>test</h1>
+		// </div>
 	);
 }
 

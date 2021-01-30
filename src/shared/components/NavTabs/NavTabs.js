@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
-import "../NavTabs/NavTabs.css";
+import "./NavTabs.css";
 
 const useStyles = makeStyles((theme) => ({
 	root: {

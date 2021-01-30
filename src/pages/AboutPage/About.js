@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../AboutPage/AboutPage.css";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -13,13 +13,18 @@ import Paper from "@material-ui/core/Paper";
 const useStyles = makeStyles({
 	table: {
 		minWidth: 650,
+		backgroundColor: "#313131be",
+		color: "white",
+	},
+	tableDiv: {
+		padding: 30,
 	},
 });
 
 function createData(dates, work) {
 	return { dates, work };
 }
-
+<div className="tableDiv"></div>;
 const rows = [
 	createData(
 		"2010-2013	",

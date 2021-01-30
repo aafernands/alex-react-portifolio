@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./shared/components/NavTabs/NavTabs";
 import Footer from "./shared/components/Footer/Footer";
@@ -9,13 +9,27 @@ import Contact from "./pages/ContactPage/Contact.js";
 import Portifolio from "./pages/PortifolioPage/Portifolio.js";
 import "./shared/style/global.css";
 import { Container } from "@material-ui/core";
+import DrawerComponent from "./shared/components/Footer/Footer";
+
 
 function App() {
+	// state for drawer
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleMenu = () => {
+		// toggle the drawer open state
+		setIsOpen(!isOpen);
+	};
+
 	return (
 		<Container>
 			<Router>
 				<div>
-					<NavTabs />
+					<NavTabs onToggle={toggleMenu} />
+					<DrawerComponent
+						isOpen={isOpen}
+						onToggle={toggleMenu}
+					></DrawerComponent>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/about" component={About} />
 					<Route exact path="/contact" component={Contact} />

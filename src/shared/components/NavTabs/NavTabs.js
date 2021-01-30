@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function NavTabs() {
+function NavTabs({ onToggle }) {
 	const classes = useStyles();
 
 	return (
@@ -41,6 +41,7 @@ function NavTabs() {
 			<AppBar position="static">
 				<Toolbar>
 					<IconButton
+						click={onToggle}
 						edge="start"
 						className={classes.menuButton}
 						color="inherit"

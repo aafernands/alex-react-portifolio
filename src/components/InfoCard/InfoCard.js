@@ -60,7 +60,7 @@ function InfoCard() {
 					params={{
 						particles: {
 							number: {
-								value: 40,
+								value: 120,
 							},
 						},
 					}}

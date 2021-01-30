@@ -10,9 +10,23 @@ import "../NavTabs/NavTabs.css";
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
+		position: "relative",
+		zIndex: 2,
 	},
+
 	menuButton: {
 		marginRight: theme.spacing(2),
+		[theme.breakpoints.up("sm")]: {
+			display: "none",
+		},
+	},
+	desktopBtn: {
+		[theme.breakpoints.down("sm")]: {
+			display: "none",
+		},
+		[theme.breakpoints.up("md")]: {
+			display: "block",
+		},
 	},
 	title: {
 		flexGrow: 1,
@@ -35,24 +49,36 @@ function NavTabs() {
 						<MenuIcon />
 					</IconButton>
 
-					<Button variant="contained" color="Secondary" href="/">
-						HOME
-					</Button>
+					<div className={classes.desktopBtn}>
+						<Button
+							size="Large"
+							variant="containedPrimary"
+							color="Secondary"
+							href="/"
+						>
+							HOME
+						</Button>
 
-          <Button variant="contained" color="Secondary" href="./About">
-						ABOUT
-					</Button>
+						<Button variant="containedPrimary" color="Secondary" href="./About">
+							ABOUT
+						</Button>
 
-          <Button variant="contained" color="Secondary" href=".Contact">
-						CONTACT
-					</Button>
+						<Button
+							variant="containedPrimary"
+							color="Secondary"
+							href=".Contact"
+						>
+							CONTACT
+						</Button>
 
-          <Button variant="contained" color="Secondary" href="./Portifolio">
-						PORTIFOLIO
-					</Button>
-
-
-
+						<Button
+							variant="containedPrimary"
+							color="Secondary"
+							href="./Portifolio"
+						>
+							PORTIFOLIO
+						</Button>
+					</div>
 				</Toolbar>
 			</AppBar>
 		</div>

@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# ALEX FERNANDES PORTIFOLIO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[User Github Link](https://github.com/aafernands)
 
-## Available Scripts
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-In the project directory, you can run:
+## Assignment
 
-### `npm start`
+Create a responsive portifolio webpage that meets the following criteria:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Functional, deployed application
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- GitHub repository with README describing the project
 
-### `npm test`
+- Navbar must be consistent on each page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
 
-### `npm run build`
+- All links must work.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Must use semantic html.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Each page must have valid and correct HTML. (use a validation service)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Must contain your personalized information. (bio, name, images, links to social media, etc.)
 
-### `npm run eject`
+- Must properly utilize Bootstrap components and grid system.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  | Table of Contents        |
+  | ------------------------ |
+  | [Assignment](#Assigment) |
+  | [Summary](#Summary)      |
+  | [License](#License)      |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![demo](assets/demo.gif)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Summary
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Steps taken to complete this assigmnet:
 
-## Learn More
+- Created a css file for each website page;
+- All links/buttons on this website works properly;
+- Some of the resources used on this projectwas:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  [FontAwesome](https://fontawesome.com/)<br />
+  [Bootstrap](https://getbootstrap.com/)<br />
+  [Placeholder](https://placeholder.com/)<br />
+  [Google Fonts](https://fonts.google.com/)<br />
+  [W3 Schools](https://www.w3schools.com/)<br />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The final version was pushed to homework repository at
+  [github](Homework2_ResponsivePortifolio/aafernands.github.io/).
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Copyright 2020 Alex Fernandes
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

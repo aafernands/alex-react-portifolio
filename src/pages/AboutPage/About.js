@@ -48,10 +48,10 @@ export default function BasicTable() {
 		<div className="container">
 			<div className="jumbotron jumbotron-fluid ">
 				<section>
-					<h1 className="display-4">ABOUT ME </h1>
+					<h1 className="display-4">ABOUT <span id="spanTitle">ME </span> </h1>
 					<p className="lead">
 						{" "}
-						<i>I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.</i>
+						I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
 					</p>
 				</section>
 			</div>

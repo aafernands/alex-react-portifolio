@@ -14,22 +14,23 @@ import DrawerComponent from "./shared/components/Footer/Footer";
 
 function App() {
 	// state for drawer
-	const [isOpen, setIsOpen] = useState(false);
+	// const [isOpen, setIsOpen] = useState(false);
 
-	const toggleMenu = () => {
-		// toggle the drawer open state
-		setIsOpen(!isOpen);
-	};
+	// const toggleMenu = () => {
+	// 	// toggle the drawer open state
+	// 	setIsOpen(!isOpen);
+	// };
 
 	return (
 		<Container>
 			<Router>
 				<div>
-					<NavTabs onToggle={toggleMenu} />
-					<DrawerComponent
+				{/* <NavTabs onToggle={toggleMenu} /> */}
+					<NavTabs />
+					{/* <DrawerComponent
 						isOpen={isOpen}
 						onToggle={toggleMenu}
-					></DrawerComponent>
+					></DrawerComponent> */}
 					<Route exact path="/" component={Home} />
 					<Route exact path="/about" component={About} />
 					<Route exact path="/contact" component={Contact} />

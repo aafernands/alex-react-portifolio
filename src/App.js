@@ -8,36 +8,21 @@ import About from "./pages/AboutPage/About";
 import Contact from "./pages/ContactPage/Contact.js";
 import Portifolio from "./pages/PortifolioPage/Portifolio.js";
 import "./shared/style/global.css";
-import DrawerComponent from "./shared/components/Footer/Footer";
-
 
 function App() {
-	// state for drawer
-	// const [isOpen, setIsOpen] = useState(false);
-
-	// const toggleMenu = () => {
-	// 	// toggle the drawer open state
-	// 	setIsOpen(!isOpen);
-	// };
-
 	return (
-			<Router>
-				<div>
-				{/* <NavTabs onToggle={toggleMenu} /> */}
-					<NavTabs />
-					{/* <DrawerComponent
-						isOpen={isOpen}
-						onToggle={toggleMenu}
-					></DrawerComponent> */}
-					<Route exact path="/" component={Home} />
-					<Route exact path="/about" component={About} />
-					<Route exact path="/contact" component={Contact} />
-					<Route path="/portifolio" component={Portifolio} />
-					<Route path="/footer" component={Footer} />
-				</div>
+		<Router>
+			<div>
+				<NavTabs />
+				<Route exact path="/" component={Home} />
+				<Route exact path="/about" component={About} />
+				<Route exact path="/contact" component={Contact} />
+				<Route path="/portifolio" component={Portifolio} />
+				<Route path="/footer" component={Footer} />
+			</div>
 
-				<Footer />
-			</Router>
+			<Footer />
+		</Router>
 	);
 }
 

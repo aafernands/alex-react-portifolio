@@ -77,7 +77,75 @@ function NavTabs({ onToggle }) {
 
 
 	return (
-		
+		// <div className={classes.root}>
+		// 	<AppBar position="static">
+		// 		<Toolbar>
+		// 			<IconButton
+		// 				click={handleDrawerOpen}
+		// 				edge="start"
+		// 				className={classes.menuButton}
+		// 				color="inherit"
+		// 				aria-label="menu"
+		// 			>
+		// 				<MenuIcon />
+		// 			</IconButton>
+
+		// 			<div className={classes.desktopBtn}>
+		// 				<Button
+		// 					variant="containedPrimary"
+		// 					color="Secondary"
+		// 					component={Link}
+		// 					to="/"
+		// 				>
+		// 					HOME
+		// 				</Button>
+
+		// 				<Button
+		// 					variant="containedPrimary"
+		// 					color="Secondary"
+		// 					component={Link}
+		// 					to="/about"
+		// 				>
+		// 					ABOUT
+		// 				</Button>
+
+		// 				<Button
+		// 					variant="containedPrimary"
+		// 					color="Secondary"
+		// 					component={Link}
+		// 					to="/contact"
+		// 				>
+		// 					CONTACT
+		// 				</Button>
+
+		// 				<Button
+		// 					variant="containedPrimary"
+		// 					color="Secondary"
+		// 					component={Link}
+		// 					to="/portifolio"
+		// 				>
+		// 					PORTIFOLIO
+		// 				</Button>
+		// 			</div>
+		// 		</Toolbar>
+		// 	</AppBar>
+		// 	<Drawer
+		// 		variant="persistent"
+		// 		classes={{
+		// 			paper: classes.drawerPaper,
+		// 		}}
+		// 		open={drawerIsOpen}
+		// 	>
+		// 		<div className={classes.drawerHeader}>
+		// 			<IconButton onClick={handleDrawerClose}>
+		// 				<ChevronLeftIcon />
+		// 			</IconButton>
+		// 		</div>
+		// 		<div className={classes.drawerInner}>
+		// 			<p>drawer content</p>
+		// 		</div>
+		// 	</Drawer>
+		// </div>
 
 		<div>
       <div className={classes.root}>

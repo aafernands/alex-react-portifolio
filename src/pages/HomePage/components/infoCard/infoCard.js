@@ -59,16 +59,25 @@ function InfoCard() {
 							wrapper="p"
 						/>
 					</Typography>
-					{/* <Particles
-						className={classes.particles}
-						params={{
-							particles: {
-								number: {
-									value: 40,
-								},
-							},
-						}}
-					/> */}
+					<Grid>
+							<p className={classes.paragraph}>
+								I'm a Web Developer student based in New Jersey, United States.
+								I strive to build immersive and beautiful web applications
+								through carefully crafted code and user-centric design.
+							</p>
+						</Grid>
+						<Grid>
+							<Button
+								size="large"
+								style={{ fontSize: 12, padding: 18 }}
+								variant="contained"
+								color="primary"
+								href="/about"
+							>
+								MORE ABOUT ME
+							</Button>
+						</Grid>
+					
 				</container>
 			</Box>
 		</div>

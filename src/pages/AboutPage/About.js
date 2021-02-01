@@ -1,5 +1,5 @@
 import React from "react";
-import "../AboutPage/AboutPage.css";
+import "../AboutPage/About.css";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -46,17 +46,15 @@ export default function BasicTable() {
 
 	return (
 		<div className="container">
-			<div className="jumbotron jumbotron-fluid ">
 				<section>
-					<h1 className="display-4">ABOUT <span id="spanTitle">ME </span> </h1>
+					<h1 className="display-4">
+						ABOUT <span id="spanTitle">ME </span>{" "}
+					</h1>
 					<p className="lead">
 						{" "}
 						I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
 					</p>
 				</section>
-			</div>
-
-			
 
 			<TableContainer component={Paper}>
 				<h4>Work Experience</h4>

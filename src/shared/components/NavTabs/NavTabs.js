@@ -5,6 +5,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
+
 import "./NavTabs.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -52,22 +54,27 @@ function NavTabs({ onToggle }) {
 
 					<div className={classes.desktopBtn}>
 						<Button
-							size="Large"
-							variant="containedPrimary"
-							color="Secondary"
-							href="/"
-						>
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/"
+							>
 							HOME
 						</Button>
 
-						<Button variant="containedPrimary" color="Secondary" href="./About">
+						<Button 	variant="containedPrimary"
+							color="Secondary"
+							component={Link}
+							to="/about"
+						>
 							ABOUT
 						</Button>
 
 						<Button
 							variant="containedPrimary"
 							color="Secondary"
-							href=".Contact"
+							component={Link}
+							to="/contact"
 						>
 							CONTACT
 						</Button>
@@ -75,7 +82,9 @@ function NavTabs({ onToggle }) {
 						<Button
 							variant="containedPrimary"
 							color="Secondary"
-							href="./Portifolio"
+							component={Link}
+							to="/portifolio"
+					
 						>
 							PORTIFOLIO
 						</Button>

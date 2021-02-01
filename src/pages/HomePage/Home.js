@@ -51,28 +51,8 @@ function Home() {
 						justify="center"
 						alignItems="center"
 					>
-						<Grid>
 							<InfoCard />
-						</Grid>
-						<Grid>
-							<p className={classes.paragraph}>
-								I'm a Web Developer student based in New Jersey, United States.
-								I strive to build immersive and beautiful web applications
-								through carefully crafted code and user-centric design.
-							</p>
-						</Grid>
-						<Grid>
-							<Button
-								startIcon={<StarIcon />}
-								size="large"
-								style={{ fontSize: 12, padding: 18 }}
-								variant="contained"
-								color="secondary"
-								href="/about"
-							>
-								MORE ABOUT ME
-							</Button>
-						</Grid>
+ 						
 					</Grid>
 				</div>
 			</Box>

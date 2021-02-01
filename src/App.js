@@ -8,7 +8,6 @@ import About from "./pages/AboutPage/About";
 import Contact from "./pages/ContactPage/Contact.js";
 import Portifolio from "./pages/PortifolioPage/Portifolio.js";
 import "./shared/style/global.css";
-import { Container } from "@material-ui/core";
 import DrawerComponent from "./shared/components/Footer/Footer";
 
 
@@ -22,7 +21,6 @@ function App() {
 	// };
 
 	return (
-		<Container>
 			<Router>
 				<div>
 				{/* <NavTabs onToggle={toggleMenu} /> */}
@@ -40,7 +38,6 @@ function App() {
 
 				<Footer />
 			</Router>
-		</Container>
 	);
 }
 

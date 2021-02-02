@@ -8,13 +8,10 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
+import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
-import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
-import PropTypes from "prop-types";
-import LinearProgress from "@material-ui/core/LinearProgress";
-import Typography from "@material-ui/core/Typography";
+
 import LinearProgressWithLabel from "./components/LinearProgressWithLabel";
 
 const useStyles = makeStyles({
@@ -22,22 +19,28 @@ const useStyles = makeStyles({
 		minWidth: 650,
 		backgroundColor: "#313131be",
 		color: "white",
-
-
-		
+		background: "red",
 	},
 	tableDiv: {
 		padding: 30,
 	},
 	skill: {
 		width: "100%",
+		fontFamily: "Raleway",
+		fontSize: "12px",
+	},
+	tableContent: {
+		color: "white",
+		fontFamily: "Raleway",
+		fontSize: "12px",
+		textAlign: "left",
+		padding: "10px"
 	},
 });
 
 function createData(dates, work) {
 	return { dates, work };
 }
-<div className="tableDiv"></div>;
 const rows = [
 	createData(
 		"2010-2013	",
@@ -68,6 +71,7 @@ export default function BasicTable() {
 						{" "}
 						I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
 					</p>
+					<br></br>
 				</section>
 			</div>
 			<div className="test">
@@ -77,17 +81,25 @@ export default function BasicTable() {
 					<Table className={classes.table} aria-label="simple table">
 						<TableHead>
 							<TableRow>
-								<TableCell>Dates</TableCell>
-								<TableCell align="right">Work</TableCell>
+								<TableCell className={classes.tableContent}>Dates</TableCell>
+								<TableCell className={classes.tableContent} align="right">
+									Work
+								</TableCell>
 							</TableRow>
 						</TableHead>
 						<TableBody>
 							{rows.map((row) => (
 								<TableRow key={row.dates}>
-									<TableCell component="th" scope="row">
+									<TableCell
+										className={classes.tableContent}
+										component="th"
+										scope="row"
+									>
 										{row.dates}
 									</TableCell>
-									<TableCell align="right">{row.work}</TableCell>
+									<TableCell className={classes.tableContent} align="right">
+										{row.work}
+									</TableCell>
 								</TableRow>
 							))}
 						</TableBody>
@@ -95,7 +107,7 @@ export default function BasicTable() {
 				</TableContainer>
 			</div>
 			<Divider />
-
+			<br></br>
 			<div className="test">
 				<h3>Skils</h3>
 
@@ -107,7 +119,7 @@ export default function BasicTable() {
 					<LinearProgressWithLabel label="Bootstrap" value={59} />
 				</div>
 			</div>
-
+			<br></br>
 			<div className="test">
 				<div>
 					<h3>Myinfo</h3>
@@ -128,6 +140,22 @@ export default function BasicTable() {
 					<p>Twitter: alexafernands</p>
 				</div>
 			</div>
+			<br></br>
+			<div className="test">
+				<Button
+					size="large"
+					style={{ fontSize: 12, padding: 18 }}
+					variant="contained"
+					color="primary"
+					href="./components/AlexFernandes_Resume.pdf"
+					position="center"
+				>
+					DOWNLOAD MY CV
+				</Button>
+			</div>
+			<br></br>
+
+			<br></br>
 		</Container>
 	);
 }

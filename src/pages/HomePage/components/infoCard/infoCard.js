@@ -35,10 +35,8 @@ const userStyles = makeStyles((theme) => ({
 	typical: {
 		fontFamily: "Poppins",
 		padding: "20px",
-		fontsize:"12px",
+		fontSize: "40px",
 		textAlign: "center",
-
-
 	},
 }));
 
@@ -47,17 +45,14 @@ function InfoCard() {
 
 	return (
 		<div className={classes.root}>
+			<Grid container justify="center">
+				<Avatar className={classes.avatar} src={Logo} alt="Alex" />
+			</Grid>
 			<Box className={classes.typedContainer}>
-				<Grid container justify="center">
-					<Avatar className={classes.avatar} src={Logo} alt="Alex" />
-				</Grid>
-
 				<Container maxWidth="sm">
 					<Box className="infoCard">
 						<Typography className={classes.title} variant="h4">
-						<h5 className={classes.hiThre}>
-							HI THERE
-						</h5>
+							<h5 className={classes.hiThre}>HI THERE</h5>
 							<Typical
 								className={classes.typical}
 								steps={[

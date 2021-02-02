@@ -4,10 +4,6 @@
 	background-color: #000000ea;
 }
 
-.tableDiv {
-	background-color: blue;
-}
-
 #spanTitle {
 	color: #1a237e;
 }
@@ -20,3 +16,42 @@
 	text-align: center;
 }
 
+#container {
+	background-color: red;
+}
+
+.test {
+	padding: 20px;
+	background-color: "red";
+	align-items: center;
+	text-align: center;
+	border-radius: 0rem;
+	font-size: 12px;
+	padding: 20px;
+	background-color: #313131be;
+	margin: 5px 40px 0px 40px;
+	box-shadow: 2.5px 5px 4px #000000;
+	color: white;
+}
+
+#outlined-required {
+	color: white !important;
+}
+
+form {
+	color: white;
+	padding: 20px;
+	backgroundcolor: #818181be;
+}
+
+p {
+	font-size: 10px;
+	font-family: "Raleway", sans-serif;
+}
+
+h6 {
+	font-size: 20px;
+	margin: 0px;
+	padding: 10px;
+	font-family: "Raleway", sans-serif;
+}

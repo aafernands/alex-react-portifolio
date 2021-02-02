@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	drawer: {
 		width: 300,
-		backgroundColor: "#1a237e",
+		backgroundColor: "#313131;",
 	},
 	fullList: {
 		width: "auto",

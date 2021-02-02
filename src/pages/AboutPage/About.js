@@ -34,7 +34,7 @@ const useStyles = makeStyles({
 		fontFamily: "Raleway",
 		fontSize: "12px",
 		textAlign: "left",
-		padding: "10px"
+		padding: "10px",
 	},
 });
 

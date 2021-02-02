@@ -22,6 +22,9 @@ const useStyles = makeStyles({
 		minWidth: 650,
 		backgroundColor: "#313131be",
 		color: "white",
+
+
+		
 	},
 	tableDiv: {
 		padding: 30,
@@ -67,8 +70,9 @@ export default function BasicTable() {
 					</p>
 				</section>
 			</div>
-			<h1>Work Experience</h1>
 			<div className="test">
+				<h3>Work Experience</h3>
+
 				<TableContainer>
 					<Table className={classes.table} aria-label="simple table">
 						<TableHead>
@@ -92,16 +96,36 @@ export default function BasicTable() {
 			</div>
 			<Divider />
 
-			<div>
-				<h1>Skils</h1>
-			</div>
 			<div className="test">
+				<h3>Skils</h3>
+
 				<div className={classes.skill}>
 					<LinearProgressWithLabel label="iOS Development" value={50} />
 					<LinearProgressWithLabel label="Javascript" value={20} />
 					<LinearProgressWithLabel label="HTML and CSS" value={45} />
 					<LinearProgressWithLabel label="Microsoft Office" value={60} />
 					<LinearProgressWithLabel label="Bootstrap" value={59} />
+				</div>
+			</div>
+
+			<div className="test">
+				<div>
+					<h3>Myinfo</h3>
+				</div>
+
+				<div className={classes.skill}>
+					<p>First Name: Alex</p>
+					<p>Last Name: Fernandes</p>
+					<p>Birthdate: 04 April 1987</p>
+					<p>Nationality: Brazilian</p>
+					<p>Experience: Entry Level</p>
+					<p>Address: New Jersey, US</p>
+					<p>Freelance: Available</p>
+					<p>Languages: English - Portuguese</p>
+					<p>Phone: 9738363080</p>
+					<p>Email: alexfernands@outlook.com</p>
+					<p>GitHub: aafernands</p>
+					<p>Twitter: alexafernands</p>
 				</div>
 			</div>
 		</Container>

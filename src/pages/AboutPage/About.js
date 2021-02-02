@@ -9,6 +9,9 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import Divider from "@material-ui/core/Divider";
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles({
 	table: {
@@ -45,7 +48,8 @@ export default function BasicTable() {
 	const classes = useStyles();
 
 	return (
-		<div className="container">
+		<Container className="container">
+			<div>
 				<section>
 					<h1 className="display-4">
 						ABOUT <span id="spanTitle">ME </span>{" "}
@@ -55,6 +59,7 @@ export default function BasicTable() {
 						I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
 					</p>
 				</section>
+			</div>
 
 			<TableContainer component={Paper}>
 				<h4>Work Experience</h4>
@@ -78,6 +83,8 @@ export default function BasicTable() {
 					</TableBody>
 				</Table>
 			</TableContainer>
-		</div>
+
+			<Divider />
+		</Container>
 	);
 }

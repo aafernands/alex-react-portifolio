@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createStyles, makeStyles, Theme  } from "@material-ui/core/styles";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -7,21 +7,17 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
-import ChevronLeftIcon from "@material-ui/icons//ChevronLeft";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 
 import "./NavTabs.css";
 
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from "react-router-dom";
 
-
-import {
-	Typography,
-	MenuList,
-	MenuItem,
-	ListItemText
-   } from '@material-ui/core';
-
-
+import { Typography, MenuList, MenuItem } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
 	// root: {
@@ -45,106 +41,106 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 
-
 	root: {
 		flexGrow: 1,
-	  },
+	},
 
-	  title: {
+	title: {
 		flexGrow: 1,
-	  },
-	  drawer: {
+	},
+	drawer: {
 		width: 300,
-	  },
-	  fullList: {
-		width: 'auto',
-	  },
-
+		backgroundColor: "rgba(255, 255, 255, 0.589)",
+	},
+	fullList: {
+		width: "auto",
+	},
 }));
 
 function NavTabs({ onToggle }) {
-
-
 	const classes = useStyles();
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleDrawer = (open) => () => {
-	  setIsOpen(open);
+		setIsOpen(open);
 	};
-  
-	const activeRoute = (routeName) => {
-	//   return props.location.pathname === routeName ? true : false;
-	}
 
+	const activeRoute = (routeName) => {
+		//   return props.location.pathname === routeName ? true : false;
+	};
 
 	return (
-		
-
 		<div>
-      <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar>
-            {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
+			<div className={classes.root}>
+				<AppBar position="static">
+					<Toolbar>
+						{/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton> */}
 
- 			<IconButton
-						 onClick={toggleDrawer(true)}
-						edge="start"
-						className={classes.menuButton}
-						color="inherit"
-						aria-label="menu"
-					>
-						<MenuIcon />
-					</IconButton>
+						<IconButton
+							onClick={toggleDrawer(true)}
+							edge="start"
+							className={classes.menuButton}
+							color="inherit"
+							aria-label="menu"
+						>
+							<MenuIcon />
+						</IconButton>
+
 						<div className={classes.desktopBtn}>
-						<Button
-							variant="containedPrimary"
-							color="Secondary"
-							component={Link}
-							to="/"
-						>
-							HOME
-						</Button>
+							<Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/"
+							>
+								HOME
+							</Button>
 
-						<Button
-							variant="containedPrimary"
-							color="Secondary"
-							component={Link}
-							to="/about"
-						>
-							ABOUT
-						</Button>
+							<Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/about"
+							>
+								ABOUT
+							</Button>
 
-						<Button
-							variant="containedPrimary"
-							color="Secondary"
-							component={Link}
-							to="/contact"
-						>
-							CONTACT
-						</Button>
+							<Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/contact"
+							>
+								CONTACT
+							</Button>
 
-						<Button
-							variant="containedPrimary"
-							color="Secondary"
-							component={Link}
-							to="/portifolio"
-						>
-							PORTIFOLIO
-						</Button>
-					</div>
-          </Toolbar>
-        </AppBar>
-      </div>
-      <Drawer classes={{ paper: classes.drawer }} open={isOpen} onClose={toggleDrawer(false)}>
-        <div
-          className={classes.fullList}
-          role="presentation"
-          onClick={toggleDrawer(false)}
-          onKeyDown={toggleDrawer(false)}
-        >
-          <MenuList>
-            {/* {Routes.map((prop, key) => {
+							<Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/portifolio"
+							>
+								PORTIFOLIO
+							</Button>
+						</div>
+					</Toolbar>
+				</AppBar>
+			</div>
+
+			<Drawer
+				classes={{ paper: classes.drawer }}
+				open={isOpen}
+				onClose={toggleDrawer(false)}
+			>
+				<div
+					className={classes.fullList}
+					role="presentation"
+					onClick={toggleDrawer(false)}
+					onKeyDown={toggleDrawer(false)}
+				>
+					<MenuList>
+						{/* {Routes.map((prop, key) => {
               return (
                 <NavLink to={prop.path} style={{ textDecoration: 'none' }} key={key}>
                   <MenuItem selected={activeRoute(prop.path)}>
@@ -153,11 +149,59 @@ function NavTabs({ onToggle }) {
                 </NavLink>
               );
             })} */}
-			<h1>test</h1>
-          </MenuList>
-        </div>
-      </Drawer>
-    </div>
+						<List>
+							<ListItem button component={Link} to="/">
+								<ListItemIcon>
+									<PermContactCalendarIcon />
+								</ListItemIcon>
+								<ListItemText primary={"HOME"} />
+							</ListItem>
+							<ListItem button component={Link} to="/about">
+								<ListItemText primary={"ABOUT"} />
+							</ListItem>
+							<ListItem button component={Link} to="/contact">
+								<ListItemText primary={"CONTACT"} />
+							</ListItem>
+						</List>
+						{/* <Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/"
+							>
+								HOME
+							</Button>
+
+							<Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/about"
+							>
+								ABOUT
+							</Button>
+
+							<Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/contact"
+							>
+								CONTACT
+							</Button>
+
+							<Button
+								variant="containedPrimary"
+								color="Secondary"
+								component={Link}
+								to="/portifolio"
+							>
+								PORTIFOLIO
+							</Button> */}
+					</MenuList>
+				</div>
+			</Drawer>
+		</div>
 	);
 }
 

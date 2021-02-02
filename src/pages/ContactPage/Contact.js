@@ -3,7 +3,6 @@ import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import "../ContactPage/Contact.css";
 
-
 const useStyles = makeStyles((theme) => ({
 	root: {
 		"& .MuiTextField-root": {
@@ -25,7 +24,7 @@ export default function Contact() {
 					</h1>
 					<p className="lead">
 						{" "}
-						TEXT...
+						LEAVE YOUR MESSAGE AND I WILL GET BACK TO YOU AS SOON AS POSSIBLE.git add .
 					</p>
 				</section>
 			</div>

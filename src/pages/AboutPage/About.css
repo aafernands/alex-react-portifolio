@@ -6,9 +6,7 @@
 	background-color: blue;
 }
 
-#spanTitle {
-	color: red;
-}
+
 
 .lead {
 	font-family: "Poppins", sans-serif;
@@ -16,4 +14,16 @@
 	font-size: 12px;
 	font-weight: 100;
 	text-align: center;
+}
+
+h1,
+label {
+	font-family: "Poppins", sans-serif;
+	color: white;
+	
+}
+
+.test {
+	padding: 20px;
+	background-color: "red";
 }

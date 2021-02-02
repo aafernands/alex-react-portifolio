@@ -12,6 +12,10 @@ import Paper from "@material-ui/core/Paper";
 import Divider from "@material-ui/core/Divider";
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
+import PropTypes from "prop-types";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Typography from "@material-ui/core/Typography";
+import LinearProgressWithLabel from "./components/LinearProgressWithLabel";
 
 const useStyles = makeStyles({
 	table: {
@@ -21,6 +25,9 @@ const useStyles = makeStyles({
 	},
 	tableDiv: {
 		padding: 30,
+	},
+	skill: {
+		width: "100%",
 	},
 });
 
@@ -60,31 +67,43 @@ export default function BasicTable() {
 					</p>
 				</section>
 			</div>
-
-			<TableContainer component={Paper}>
-				<h4>Work Experience</h4>
-
-				<Table className={classes.table} aria-label="simple table">
-					<TableHead>
-						<TableRow>
-							<TableCell>Dates</TableCell>
-							<TableCell align="right">Work</TableCell>
-						</TableRow>
-					</TableHead>
-					<TableBody>
-						{rows.map((row) => (
-							<TableRow key={row.dates}>
-								<TableCell component="th" scope="row">
-									{row.dates}
-								</TableCell>
-								<TableCell align="right">{row.work}</TableCell>
+			<h1>Work Experience</h1>
+			<div className="test">
+				<TableContainer component={Paper}>
+					<Table className={classes.table} aria-label="simple table">
+						<TableHead>
+							<TableRow>
+								<TableCell>Dates</TableCell>
+								<TableCell align="right">Work</TableCell>
 							</TableRow>
-						))}
-					</TableBody>
-				</Table>
-			</TableContainer>
-
+						</TableHead>
+						<TableBody>
+							{rows.map((row) => (
+								<TableRow key={row.dates}>
+									<TableCell component="th" scope="row">
+										{row.dates}
+									</TableCell>
+									<TableCell align="right">{row.work}</TableCell>
+								</TableRow>
+							))}
+						</TableBody>
+					</Table>
+				</TableContainer>
+			</div>
 			<Divider />
+
+			<div>
+				<h1>Skils</h1>
+			</div>
+			<div className="test">
+				<div className={classes.skill}>
+					<LinearProgressWithLabel label="iOS Development" value={50} />
+					<LinearProgressWithLabel label="Javascript" value={20} />
+					<LinearProgressWithLabel label="HTML and CSS" value={45} />
+					<LinearProgressWithLabel label="Microsoft Office" value={60} />
+					<LinearProgressWithLabel label="Bootstrap" value={59} />
+				</div>
+			</div>
 		</Container>
 	);
 }

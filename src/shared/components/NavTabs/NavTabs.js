@@ -12,6 +12,9 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
+import WorkIcon from "@material-ui/icons/Work";
+import PersonIcon from '@material-ui/icons/Person';
+import HomeIcon from '@material-ui/icons/Home';
 
 import "./NavTabs.css";
 
@@ -50,10 +53,16 @@ const useStyles = makeStyles((theme) => ({
 	},
 	drawer: {
 		width: 300,
-		backgroundColor: "rgba(255, 255, 255, 0.589)",
+		backgroundColor: "#1a237e",
 	},
 	fullList: {
 		width: "auto",
+	},
+	linkColor: {
+		color: "white",
+	},
+	iconStyle: {
+		color: "white",
 	},
 }));
 
@@ -149,55 +158,32 @@ function NavTabs({ onToggle }) {
                 </NavLink>
               );
             })} */}
-						<List>
+						<List className={classes.linkColor}>
 							<ListItem button component={Link} to="/">
 								<ListItemIcon>
-									<PermContactCalendarIcon />
+									<HomeIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"HOME"} />
 							</ListItem>
 							<ListItem button component={Link} to="/about">
+								<ListItemIcon>
+									<PersonIcon className={classes.iconStyle} />
+								</ListItemIcon>
 								<ListItemText primary={"ABOUT"} />
 							</ListItem>
 							<ListItem button component={Link} to="/contact">
+								<ListItemIcon>
+									<PermContactCalendarIcon className={classes.iconStyle} />
+								</ListItemIcon>
 								<ListItemText primary={"CONTACT"} />
 							</ListItem>
+							<ListItem button component={Link} to="/portifolio">
+								<ListItemIcon>
+									<WorkIcon className={classes.iconStyle} />
+								</ListItemIcon>
+								<ListItemText primary={"PORTIFOLIO"} />
+							</ListItem>
 						</List>
-						{/* <Button
-								variant="containedPrimary"
-								color="Secondary"
-								component={Link}
-								to="/"
-							>
-								HOME
-							</Button>
-
-							<Button
-								variant="containedPrimary"
-								color="Secondary"
-								component={Link}
-								to="/about"
-							>
-								ABOUT
-							</Button>
-
-							<Button
-								variant="containedPrimary"
-								color="Secondary"
-								component={Link}
-								to="/contact"
-							>
-								CONTACT
-							</Button>
-
-							<Button
-								variant="containedPrimary"
-								color="Secondary"
-								component={Link}
-								to="/portifolio"
-							>
-								PORTIFOLIO
-							</Button> */}
 					</MenuList>
 				</div>
 			</Drawer>

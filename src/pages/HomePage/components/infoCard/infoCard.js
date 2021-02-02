@@ -55,6 +55,9 @@ function InfoCard() {
 				<Container maxWidth="sm">
 					<Box className="infoCard">
 						<Typography className={classes.title} variant="h4">
+						<h5 className={classes.hiThre}>
+							HI THERE
+						</h5>
 							<Typical
 								className={classes.typical}
 								steps={[

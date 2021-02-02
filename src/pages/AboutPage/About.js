@@ -69,7 +69,7 @@ export default function BasicTable() {
 			</div>
 			<h1>Work Experience</h1>
 			<div className="test">
-				<TableContainer component={Paper}>
+				<TableContainer>
 					<Table className={classes.table} aria-label="simple table">
 						<TableHead>
 							<TableRow>

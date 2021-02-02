@@ -1,12 +1,8 @@
-.container {
-	background-color: black;
-}
+
 
 .tableDiv {
 	background-color: blue;
 }
-
-
 
 .lead {
 	font-family: "Poppins", sans-serif;
@@ -20,10 +16,22 @@ h1,
 label {
 	font-family: "Poppins", sans-serif;
 	color: white;
-	
+}
+
+label {
+	color: white;
 }
 
 .test {
 	padding: 20px;
 	background-color: "red";
+	align-items: center;
+	text-align: center;
+	border-radius: 0rem;
+	font-size: 12px;
+	padding: 20px;
+	background-color: #313131be;
+	margin: 5px 20px 0px 20px;
+	box-shadow: 2.5px 5px 4px #000000;
+	color: white;
 }

@@ -3,6 +3,8 @@ import "../PortifolioPage/Portifolio.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Container from "@material-ui/core/Container";
+import Projects from "./Projects.js";
+ 
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -26,16 +28,8 @@ export default function Portifolio() {
 				{" "}
 				<i>HERE YOU CAN HAVE A GLIMPSE OF MY WORK </i>
 			</p>
-			<div className={classes.root}>
-				<Paper>
-					<h1>T</h1>
-				</Paper>
-				<Paper>
-					<h1>T</h1>
-				</Paper>
-				<Paper>
-					<h1>T</h1>
-				</Paper>
+			<div>
+				<Projects />
 			</div>
 		</div>
 	);

@@ -1,6 +1,6 @@
 import React from "react";
 import "../AboutPage/About.css";
-
+import CV_PDF from "./components/AlexFernandes_Resume.pdf";
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -147,14 +147,13 @@ export default function BasicTable() {
 					style={{ fontSize: 12, padding: 18 }}
 					variant="contained"
 					color="primary"
-					href="./components/AlexFernandes_Resume.pdf"
+					href={CV_PDF}
 					position="center"
 				>
 					DOWNLOAD MY CV
 				</Button>
 			</div>
 			<br></br>
-
 			<br></br>
 		</Container>
 	);

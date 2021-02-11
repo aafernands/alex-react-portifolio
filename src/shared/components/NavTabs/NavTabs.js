@@ -6,6 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import Box from "@material-ui/core/Box";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -13,8 +14,8 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import WorkIcon from "@material-ui/icons/Work";
-import PersonIcon from '@material-ui/icons/Person';
-import HomeIcon from '@material-ui/icons/Home';
+import PersonIcon from "@material-ui/icons/Person";
+import HomeIcon from "@material-ui/icons/Home";
 
 import "./NavTabs.css";
 
@@ -63,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	iconStyle: {
 		color: "white",
+	},
+	socialIcons: {
+		textAlign: "justify",
 	},
 }));
 
@@ -165,24 +169,46 @@ function NavTabs({ onToggle }) {
 								</ListItemIcon>
 								<ListItemText primary={"HOME"} />
 							</ListItem>
+							<hr></hr>
 							<ListItem button component={Link} to="/about">
 								<ListItemIcon>
 									<PersonIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"ABOUT"} />
 							</ListItem>
+							<hr></hr>
 							<ListItem button component={Link} to="/contact">
 								<ListItemIcon>
 									<PermContactCalendarIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"CONTACT"} />
 							</ListItem>
+							<hr></hr>
 							<ListItem button component={Link} to="/portifolio">
 								<ListItemIcon>
 									<WorkIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"PORTIFOLIO"} />
 							</ListItem>
+							<hr></hr>
+							<div classNane={classes.socialIcons}>
+								<a
+									href="https://twitter.com/alexafernands/"
+									className="fa fa-twitter"
+								></a>
+								<a
+									href="https://www.linkedin.com/in/alex-fernandes-5850b535/"
+									className="fa fa-linkedin"
+								></a>
+								<a
+									href="https://www.instagram.com/aafernands/"
+									className="fa fa-instagram"
+								></a>
+								<a
+									href="https://github.com/aafernands/"
+									className="fa fa-github"
+								></a>
+							</div>
 						</List>
 					</MenuList>
 				</div>

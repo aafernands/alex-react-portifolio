@@ -22,7 +22,6 @@ const userStyles = makeStyles((theme) => ({
 
 function App() {
 	const classes = userStyles();
-
 	return (
 		<Router>
 			<Container className={classes.test}>

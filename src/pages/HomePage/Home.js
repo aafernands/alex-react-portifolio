@@ -12,6 +12,7 @@ const userStyles = makeStyles((theme) => ({
 	root: {
 		position: "relative",
 		color: "white",
+		background: "#000000ea;",
 	},
 	particles: {
 		position: "absolute",

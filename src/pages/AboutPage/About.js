@@ -15,11 +15,15 @@ import Container from "@material-ui/core/Container";
 import LinearProgressWithLabel from "./components/LinearProgressWithLabel";
 
 const useStyles = makeStyles({
+	root: {
+		color: "white",
+		background: "#000000ea;",
+		height: '76vh'
+	},
 	table: {
 		minWidth: 650,
 		backgroundColor: "#313131be",
 		color: "white",
-		background: "red",
 	},
 	tableDiv: {
 		padding: 30,
@@ -61,7 +65,7 @@ export default function BasicTable() {
 	const classes = useStyles();
 
 	return (
-		<Container className="container">
+		<Container className={"container"}>
 			<div>
 				<section>
 					<h1 className="display-4">

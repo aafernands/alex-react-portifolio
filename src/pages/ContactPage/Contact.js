@@ -38,6 +38,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Contact() {
 	const classes = useStyles();
 
+<a href="mailTo:alexfernands@outlook.com"> Contact Me </a>
+
 	return (
 		<Container className="container">
 			<div>
@@ -112,7 +114,7 @@ export default function Contact() {
 					style={{ fontSize: 12, padding: 18 }}
 					variant="contained"
 					color="primary"
-					href="/submited email"
+					href="/submitted"
 					position="left"
 				>
 					SUBMIT

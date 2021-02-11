@@ -31,12 +31,18 @@ const userStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		fontFamily: "Raleway",
 		padding: "20px",
+		marginBottom: 20,
 	},
 	typical: {
+		minHeight: 100,
 		fontFamily: "Poppins",
 		padding: "20px",
 		fontSize: "40px",
 		textAlign: "center",
+		margin: 0,
+	},
+	hiThre: {
+		margin: 0,
 	},
 }));
 
@@ -59,6 +65,10 @@ function InfoCard() {
 									"I am alex fernandes",
 									1500,
 									"I am a web developer!",
+									2300,
+									"I am a web designer!",
+									2300,
+									"I am a blogger!",
 									2300,
 								]}
 								loop={Infinity}

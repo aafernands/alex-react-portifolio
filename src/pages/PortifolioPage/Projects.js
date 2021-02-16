@@ -1,6 +1,13 @@
 import React from "react";
 import Thumbnail from "./Thumbnail.js"; // Import the Thumbnail component
-import password from "./Macbook02.png"; // Import the Thumbnail component
+import password from "./Password.png"; // Import the Thumbnail component
+import quiz from "./Quiz.png"; // Import the Thumbnail component
+import weather from "./Weather.png"; // Import the Thumbnail component
+import scheduler from "./Scheduler.png"; // Import the Thumbnail component
+import noteTaker from "./Notes.png"; // Import the Thumbnail component
+import books from "./Books.png"; // Import the Thumbnail component
+import Container from "@material-ui/core/Container";
+
 import { makeStyles } from "@material-ui/core/styles";
 import "./Projects.css";
 
@@ -12,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 		padding: "20px",
 		textAlign: "center",
 		background: "#313131be",
-		boxShadow: "2.5px 5px 4px #000000",
+		boxShadow: "2.5px 5px 4px #fff",
 		color: "white",
 	},
 }));
@@ -22,64 +29,84 @@ function Projects(props) {
 
 	return (
 		// Render a Thumbnail component
-		<div>
-			<h1>Projects</h1>
+		<Container>
+			{/* <h1>Projects</h1> */}
 			<Grid container spacing={2}>
 				<Grid item xs={12}>
-					<Grid container justify="center" alignItems="center" spacing={2}>
+					<Grid
+						style={{
+							padding: 30,
+							backgroundColor: "#313131be",
+						}}
+						container
+						justify="center"
+						alignItems="center"
+						spacing={2}
+					>
 						<Grid item md={4}>
 							<Thumbnail
 								className={classes.thumbnail}
-								link="https://aafernands.github.io/password-generator/"
+								linkLive="https://aafernands.github.io/password-generator/"
+								linkGithub="https://github.com/aafernands/password-generator"
 								image={password}
-								title="Twitter Newsfeed"
-								category="Mobile App"
+								title="Password Generator"
+								description="Prevent a threat to security by obtaining a secure and random password with this password generator."
 							/>
 						</Grid>
 						<Grid item md={4}>
 							<Thumbnail
-								link="/airbnb"
-								image="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
-								title="Airbnb Experiences"
-								category="Website"
+								className={classes.thumbnail}
+								linkLive="https://aafernands.github.io/quiz-game/"
+								linkGithub="https://github.com/aafernands/quiz-game"
+								image={quiz}
+								title="Quiz Game"
+								description="Answer this fun trivia multiple questions quiz within the time limit. Incorrect answers wil penalize your socre by 10 seconds."
 							/>
 						</Grid>
 						<Grid item md={4}>
 							<Thumbnail
-								link="/photoshop"
-								image="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
-								title="Photoshop Redesign"
-								category="Desktop App"
+								className={classes.thumbnail}
+								linkLive="https://aafernands.github.io/weatherApp/"
+								linkGithub="https://github.com/aafernands/weatherApp"
+								image={weather}
+								title="Weather Dashboard"
+								description="Search for a city to get weather information like hunidity, wind speed, UV index and a 5 day weather forecast"
 							/>
 						</Grid>
 						<Grid item md={4}>
 							<Thumbnail
-								link="/photoshop"
-								image="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
-								title="Photoshop Redesign"
-								category="Desktop App"
+								className={classes.thumbnail}
+								linkLive="https://aafernands.github.io/work-day-scheduler/"
+								linkGithub="https://github.com/aafernands/work-day-scheduler/"
+								image={scheduler}
+								title="Note Taker"
+								description="Organize your daily tasks with this work day scheduller app. Save the notes and on specific time."
 							/>
 						</Grid>
 						<Grid item md={4}>
 							<Thumbnail
-								link="/photoshop"
-								image="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
-								title="Photoshop Redesign"
-								category="Desktop App"
+								className={classes.thumbnail}
+								linkLive="https://my-note-takerapp.herokuapp.com/index.html"
+								linkGithub="https://github.com/aafernands/note-taker"
+								image={noteTaker}
+								title="Note Taker App"
+								description="Create and save notes with this application to keep yourself organized and more productive."
 							/>
 						</Grid>
 						<Grid item md={4}>
 							<Thumbnail
-								link="/photoshop"
-								image="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
-								title="Photoshop Redesign"
-								category="Desktop App"
+								className={classes.thumbnail}
+								linkLive="https://alex-books-search-app.herokuapp.com/"
+								linkGithub="https://github.com/aafernands/google-books"
+								image={books}
+								title="Google Books Search"
+								description="Search the world's most comprehensive index of full-text books."
 							/>
 						</Grid>
 					</Grid>
 				</Grid>
 			</Grid>
-		</div>
+		</Container>
 	);
 }
 

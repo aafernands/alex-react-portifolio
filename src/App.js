@@ -11,9 +11,8 @@ import Portifolio from "./pages/PortifolioPage/Portifolio.js";
 import Submitted from "./pages/ContactPage/SubmittedPage/Submitted.js";
 import "./shared/style/global.css";
 import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
 
-const userStyles = makeStyles((theme) => ({
+const userStyles = makeStyles(() => ({
 	test: {
 		paddingLeft: "0px",
 		paddingRight: "0px",

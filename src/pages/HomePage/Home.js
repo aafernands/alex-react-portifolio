@@ -1,9 +1,7 @@
 import React from "react";
-import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box, Container } from "@material-ui/core";
+import { Grid, Box } from "@material-ui/core";
 
-import StarIcon from "@material-ui/icons/Star";
 import "../HomePage/HomePage.css";
 import InfoCard from "./components/infoCard/infoCard";
 import Particles from "react-particles-js";

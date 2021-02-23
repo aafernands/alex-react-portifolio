@@ -1,6 +1,4 @@
 import React from "react"; // Import the Component component from React
-import { Link } from "react-router-dom"; // Import the Link component
-
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -11,24 +9,11 @@ import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 
-{
-	/* <div className="project">
-			<Link to="props.link">
-				<div className="project-image">
-					<img src={props.image} alt="Project Image" height="100" />
-				</div>
-				<div className="project-title">{props.title}</div>
-				<div className="project-category">{props.category}</div>
-			</Link>
-		</div> */
-}
-
 const useStyles = makeStyles({
 	root: {
 		maxWidth: 345,
 		backgroundColor: "#424242",
 		boxShadow: "2.5px 5px 4px #000",
-
 	},
 	media: {
 		height: 200,

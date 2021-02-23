@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Contact() {
 	const classes = useStyles();
 
-<a href="mailTo:alexfernands@outlook.com"> Contact Me </a>
+	<a href="mailTo:alexfernands@outlook.com"> Contact Me </a>;
 
 	return (
 		<Container className="container">
@@ -100,7 +100,6 @@ export default function Contact() {
 						multiline
 						rows={6}
 						placeholder="Placeholder"
-						multiline
 						variant="outlined"
 						InputProps={{}}
 					/>

@@ -2,7 +2,7 @@ import Logo from "./alex.png";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Avatar, Typography } from "@material-ui/core";
-import { Grid, Paper } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
 
 import Typical from "react-typical";
@@ -67,8 +67,6 @@ function InfoCard() {
 									"I am a web developer!",
 									2300,
 									"I am a web designer!",
-									2300,
-									"I am a blogger!",
 									2300,
 								]}
 								loop={Infinity}

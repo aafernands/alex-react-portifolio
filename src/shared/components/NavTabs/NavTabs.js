@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { MenuList } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-import Box from "@material-ui/core/Box";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -18,10 +18,6 @@ import PersonIcon from "@material-ui/icons/Person";
 import HomeIcon from "@material-ui/icons/Home";
 
 import "./NavTabs.css";
-
-import { NavLink, withRouter } from "react-router-dom";
-
-import { Typography, MenuList, MenuItem } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
 	// root: {
@@ -68,6 +64,11 @@ const useStyles = makeStyles((theme) => ({
 	socialIcons: {
 		textAlign: "justify",
 	},
+	outlined: {
+		"&:hover": {
+			backgroundColor: "#35C37D",
+		},
+	},
 }));
 
 function NavTabs({ onToggle }) {
@@ -77,19 +78,11 @@ function NavTabs({ onToggle }) {
 		setIsOpen(open);
 	};
 
-	const activeRoute = (routeName) => {
-		//   return props.location.pathname === routeName ? true : false;
-	};
-
 	return (
 		<div>
 			<div className={classes.root}>
 				<AppBar position="static">
 					<Toolbar>
-						{/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
-              <MenuIcon />
-            </IconButton> */}
-
 						<IconButton
 							onClick={toggleDrawer(true)}
 							edge="start"
@@ -101,36 +94,20 @@ function NavTabs({ onToggle }) {
 						</IconButton>
 
 						<div className={classes.desktopBtn}>
-							<Button
-								variant="containedPrimary"
-								color="Secondary"
-								component={Link}
-								to="/"
-							>
+							<Button variant="containedPrimary" component={Link} to="/">
 								HOME
 							</Button>
 
-							<Button
-								variant="containedPrimary"
-								color="Secondary"
-								component={Link}
-								to="/about"
-							>
+							<Button variant="containedPrimary" component={Link} to="/about">
 								ABOUT
 							</Button>
 
-							<Button
-								variant="containedPrimary"
-								color="Secondary"
-								component={Link}
-								to="/contact"
-							>
+							<Button variant="containedPrimary" component={Link} to="/contact">
 								CONTACT
 							</Button>
 
 							<Button
 								variant="containedPrimary"
-								color="Secondary"
 								component={Link}
 								to="/portifolio"
 							>
@@ -153,15 +130,6 @@ function NavTabs({ onToggle }) {
 					onKeyDown={toggleDrawer(false)}
 				>
 					<MenuList>
-						{/* {Routes.map((prop, key) => {
-              return (
-                <NavLink to={prop.path} style={{ textDecoration: 'none' }} key={key}>
-                  <MenuItem selected={activeRoute(prop.path)}>
-                    <ListItemText primary={prop.sidebarName} />
-                  </MenuItem>
-                </NavLink>
-              );
-            })} */}
 						<List className={classes.linkColor}>
 							<ListItem button component={Link} to="/">
 								<ListItemIcon>
@@ -191,23 +159,31 @@ function NavTabs({ onToggle }) {
 								<ListItemText primary={"PORTIFOLIO"} />
 							</ListItem>
 							<hr></hr>
-							<div classNane={classes.socialIcons}>
+							<div className={classes.socialIcons}>
 								<a
 									href="https://twitter.com/alexafernands/"
 									className="fa fa-twitter"
-								></a>
+								>
+									{" "}
+								</a>
 								<a
 									href="https://www.linkedin.com/in/alex-fernandes-5850b535/"
 									className="fa fa-linkedin"
-								></a>
+								>
+									{" "}
+								</a>
 								<a
 									href="https://www.instagram.com/aafernands/"
 									className="fa fa-instagram"
-								></a>
+								>
+									{" "}
+								</a>
 								<a
 									href="https://github.com/aafernands/"
 									className="fa fa-github"
-								></a>
+								>
+									{" "}
+								</a>
 							</div>
 						</List>
 					</MenuList>

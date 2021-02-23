@@ -16,7 +16,7 @@ This application is powered by React and framework Material UI.
 ![demo](src/assets/demo/demo.gif)
 
 - The final version was pushed to homework repository at
-  [Github](https://aafernands.github.io/portifolio).
+  [Github](https://aafernands.github.io).
 
 ## License
 

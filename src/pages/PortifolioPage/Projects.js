@@ -4,7 +4,7 @@ import password from "./Password.png"; // Import the Thumbnail component
 import quiz from "./Quiz.png"; // Import the Thumbnail component
 import weather from "./Weather.png"; // Import the Thumbnail component
 import scheduler from "./Scheduler.png"; // Import the Thumbnail component
-import noteTaker from "./Notes.png"; // Import the Thumbnail component
+import WowRealtor from "./WowRealtor.png"; // Import the Thumbnail component
 import books from "./Books.png"; // Import the Thumbnail component
 import Container from "@material-ui/core/Container";
 
@@ -86,11 +86,11 @@ function Projects(props) {
 						<Grid item md={4}>
 							<Thumbnail
 								className={classes.thumbnail}
-								linkLive="https://my-note-takerapp.herokuapp.com/index.html"
-								linkGithub="https://github.com/aafernands/note-taker"
-								image={noteTaker}
-								title="Note Taker App"
-								description="Create and save notes with this application to keep yourself organized and more productive."
+								linkLive="https://wow-realtor-app.herokuapp.com/"
+								linkGithub="https://github.com/aafernands/RealtorApp"
+								image={WowRealtor}
+								title="Wow Realtor App"
+								description="Search for properties and save them on your favorites lists and more."
 							/>
 						</Grid>
 						<Grid item md={4}>

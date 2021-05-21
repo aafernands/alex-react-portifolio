@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 	root: {
 		color: "white",
 		background: "#000000ea;",
-		height: '76vh'
+		height: "76vh",
 	},
 	table: {
 		minWidth: 650,
@@ -78,7 +78,7 @@ export default function BasicTable() {
 					<br></br>
 				</section>
 			</div>
-			<div className="test">
+			{/* <div className="test">
 				<h3>Work Experience</h3>
 
 				<TableContainer>
@@ -109,18 +109,21 @@ export default function BasicTable() {
 						</TableBody>
 					</Table>
 				</TableContainer>
-			</div>
+			</div> */}
+
 			<Divider />
 			<br></br>
 			<div className="test">
 				<h3>Skils</h3>
 
 				<div className={classes.skill}>
-					<LinearProgressWithLabel label="iOS Development" value={50} />
-					<LinearProgressWithLabel label="Javascript" value={20} />
-					<LinearProgressWithLabel label="HTML and CSS" value={45} />
-					<LinearProgressWithLabel label="Microsoft Office" value={60} />
-					<LinearProgressWithLabel label="Bootstrap" value={59} />
+					<LinearProgressWithLabel label="React" value={60} />
+					<LinearProgressWithLabel label="Javascript" value={60} />
+					<LinearProgressWithLabel label="HTML and CSS" value={80} />
+					<LinearProgressWithLabel label="MongoDB" value={60} />
+					<LinearProgressWithLabel label="Material-UI" value={80} />
+					<LinearProgressWithLabel label="JWT" value={70} />
+					<LinearProgressWithLabel label="Bootstrap" value={80} />
 				</div>
 			</div>
 			<br></br>

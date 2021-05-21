@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
 	root: {
 		backgroundColor: "white",
-		color: "white",
+		color: "black",
 	},
 	label: {
 		textTransform: "capitalize",
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingBottom: 0,
 		marginTop: 0,
 		fontWeight: 500,
-		color: "white",
+		color: "black",
 	},
 
 	textField: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 		marginRight: "auto",
 		paddingBottom: 0,
 		marginTop: 10,
-		color: "white",
+		color: "black",
 		fontWeight: 500,
 	},
 }));

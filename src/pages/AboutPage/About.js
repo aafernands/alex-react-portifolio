@@ -1,6 +1,6 @@
 import React from "react";
 import "../AboutPage/About.css";
-import CV_PDF from "./components/AlexFernandes_Resume.pdf";
+import CV_PDF from "./components/AlexFernandes_Resume2.pdf";
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";

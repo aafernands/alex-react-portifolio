@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as HashRouter, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 import NavTabs from "./shared/components/NavTabs/NavTabs";
@@ -22,7 +22,7 @@ const userStyles = makeStyles(() => ({
 function App() {
 	const classes = userStyles();
 	return (
-		<Router>
+		<HashRouter>
 			<Container className={classes.test}>
 				<NavTabs />
 				<Route exact path="/" component={Home} />
@@ -33,7 +33,7 @@ function App() {
 				<Route path="/submitted" component={Submitted} />
 				<Footer />
 			</Container>
-		</Router>
+		</HashRouter>
 	);
 }
 

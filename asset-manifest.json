@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/aafernands/aafernands.github.io.git/static/css/main.57fd2420.chunk.css",
+    "main.js": "/aafernands/aafernands.github.io.git/static/js/main.dd887c30.chunk.js",
+    "main.js.map": "/aafernands/aafernands.github.io.git/static/js/main.dd887c30.chunk.js.map",
+    "runtime-main.js": "/aafernands/aafernands.github.io.git/static/js/runtime-main.1d667815.js",
+    "runtime-main.js.map": "/aafernands/aafernands.github.io.git/static/js/runtime-main.1d667815.js.map",
+    "static/js/2.6c0a7c0f.chunk.js": "/aafernands/aafernands.github.io.git/static/js/2.6c0a7c0f.chunk.js",
+    "static/js/2.6c0a7c0f.chunk.js.map": "/aafernands/aafernands.github.io.git/static/js/2.6c0a7c0f.chunk.js.map",
+    "index.html": "/aafernands/aafernands.github.io.git/index.html",
+    "static/css/main.57fd2420.chunk.css.map": "/aafernands/aafernands.github.io.git/static/css/main.57fd2420.chunk.css.map",
+    "static/js/2.6c0a7c0f.chunk.js.LICENSE.txt": "/aafernands/aafernands.github.io.git/static/js/2.6c0a7c0f.chunk.js.LICENSE.txt",
+    "static/media/AlexFernandes_Resume.63eb669d.pdf": "/aafernands/aafernands.github.io.git/static/media/AlexFernandes_Resume.63eb669d.pdf",
+    "static/media/Books.3ae91a63.png": "/aafernands/aafernands.github.io.git/static/media/Books.3ae91a63.png",
+    "static/media/Password.3617c629.png": "/aafernands/aafernands.github.io.git/static/media/Password.3617c629.png",
+    "static/media/Quiz.d2cd3f73.png": "/aafernands/aafernands.github.io.git/static/media/Quiz.d2cd3f73.png",
+    "static/media/Scheduler.cc6bd7b8.png": "/aafernands/aafernands.github.io.git/static/media/Scheduler.cc6bd7b8.png",
+    "static/media/Weather.11dea946.png": "/aafernands/aafernands.github.io.git/static/media/Weather.11dea946.png",
+    "static/media/WowRealtor.d76d4a53.png": "/aafernands/aafernands.github.io.git/static/media/WowRealtor.d76d4a53.png",
+    "static/media/alex.526c5be7.png": "/aafernands/aafernands.github.io.git/static/media/alex.526c5be7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d667815.js",
+    "static/js/2.6c0a7c0f.chunk.js",
+    "static/css/main.57fd2420.chunk.css",
+    "static/js/main.dd887c30.chunk.js"
+  ]
+}

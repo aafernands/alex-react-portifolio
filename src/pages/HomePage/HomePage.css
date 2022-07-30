@@ -1,6 +1,6 @@
 .home {
     min-height: 100vh;
-    background-color: #000000ea;
+    background-color: #ec0d0dea;
     display: flex;justify-content: space-around;
     padding: 20px;
 }

@@ -59,5 +59,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aafernands/aafernands.github.io/issues"
-  }
+  },
+  
+    "stack": "heroku-22"
+ 
 }
